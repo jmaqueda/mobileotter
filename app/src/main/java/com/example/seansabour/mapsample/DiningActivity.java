@@ -10,9 +10,13 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 
 public class DiningActivity extends ActionBarActivity implements View.OnClickListener{
-
+    LocationMarkers lm;
+    ArrayList<MyMarker> myMarkers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,6 +34,8 @@ public class DiningActivity extends ActionBarActivity implements View.OnClickLis
         DC_button.setOnClickListener(this);
         View Montes_button = findViewById(R.id.Montes_button);
         Montes_button.setOnClickListener(this);
+        lm = LocationMarkers.getInstance();
+        myMarkers = lm.getMyMarkers();
     }
 
 
@@ -57,17 +63,34 @@ public class DiningActivity extends ActionBarActivity implements View.OnClickLis
    public void onClick(View v) {
 
         if (v.getId() == R.id.OE_button) {
-            Intent i = new Intent(this, OtterExpressActivity.class);
-            startActivity(i);
-        } /*else if (v.getId() == R.id.DC_button) {
-            Intent i = new Intent(this, DiningCommonsActivity.class);
-            startActivity(i);
+            startActivity(myMarkers, "Otter Express");
+        } else if (v.getId() == R.id.DC_button) {
+            startActivity(myMarkers, "CSUMB Dinning Commons");
         }
         else if(v.getId() == R.id.Montes_button)
         {
-            Intent i = new Intent(this, MontesActivity.class);
-            startActivity(i);
+            startActivity(myMarkers, "University Center(Montes)");
 
-        }*/
+        }
+    }
+    public void startActivity(ArrayList<MyMarker> markers, String searchString){
+        MyMarker searchMarker = null;
+        for (MyMarker m: markers){
+            if (m.getName().equalsIgnoreCase(searchString)){
+                searchMarker = m;
+            }
+
+        }
+        double latitude = searchMarker.getmLatitude();
+        double longitude = searchMarker.getmLongitude();
+        String title = searchMarker.getName();
+
+
+
+        Intent i = new Intent(this, OtterExpressActivity.class);
+        i.putExtra("LONGITUDE", longitude);
+        i.putExtra("LATITUDE", latitude);
+        i.putExtra("TITLE", title);
+        startActivity(i);
     }
 }

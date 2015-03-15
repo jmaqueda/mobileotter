@@ -24,6 +24,8 @@ import android.view.WindowManager;
         dining_button.setOnClickListener(this);
         View parking_button = findViewById(R.id.parking_button);
         parking_button.setOnClickListener(this);
+        LocationMarkers lm = LocationMarkers.getInstance();
+
     }
 
     public void onClick(View v) {
