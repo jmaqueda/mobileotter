@@ -2,10 +2,13 @@ package com.example.seansabour.mapsample;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +19,13 @@ public class DiningActivity extends ActionBarActivity implements View.OnClickLis
     ArrayList<MyMarker> myMarkers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_dining);
 
         View OE_button = findViewById(R.id.OE_button);

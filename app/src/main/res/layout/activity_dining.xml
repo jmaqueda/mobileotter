@@ -1,28 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/shore">
 
     <TextView
         android:id="@+id/about_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dining_about"
-        />
+        android:textSize="35sp"
+        android:textColor="#002A4E"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:shadowColor="#E0E2EF"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="2"/>
 
     <Button
         android:id="@+id/OE_button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/OE_button" />
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:text="@string/OE_button"
+        android:background = "@drawable/roundbutton"
+        android:textSize="35sp"
+        android:textColor="#CFB53B"
+        android:layout_margin="10dp"
+        android:typeface="serif"/>
     <Button
         android:id="@+id/DC_button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/DC_button" />
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:text="@string/DC_button"
+        android:background = "@drawable/roundbutton"
+        android:textSize="35sp"
+        android:textColor="#CFB53B"
+        android:layout_margin="10dp"
+        android:typeface="serif"/>
     <Button
         android:id="@+id/Montes_button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Montes_button" />
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:text="@string/Montes_button"
+        android:background = "@drawable/roundbutton"
+        android:textSize="35sp"
+        android:textColor="#CFB53B"
+        android:layout_margin="10dp"
+        android:typeface="serif"/>
 </LinearLayout>
