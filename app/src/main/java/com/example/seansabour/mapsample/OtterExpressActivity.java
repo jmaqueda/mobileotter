@@ -1,7 +1,9 @@
 package com.example.seansabour.mapsample;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,11 +17,30 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class OtterExpressActivity extends FragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    private double latitude;
+    private double longitude;
+    private String titleString;
+    private TextView title;
+    private TextView description;
+    private String descriptionString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otter_express);
+
+        Bundle b = getIntent().getExtras();
+        latitude = b.getDouble("LATITUDE");
+        longitude = b.getDouble("LONGITUDE");
+        titleString = b.getString("TITLE");
+        descriptionString = "Store Hours: Monday - Friday: 11:00 a.m. - Midnight  \n" +
+                "Weekends: 2:00 p.m. - Midnight";
+        Log.i("LATITUDE", ""+latitude);
+        Log.i("LONGITUDE", ""+longitude);
+//        title = (TextView) findViewById(R.id.marker_label);
+//        title.setText(titleString);
+//        description = (TextView) findViewById(R.id.hours);
+//        description.setText();
         setUpMapIfNeeded();
     }
 
@@ -65,10 +86,10 @@ public class OtterExpressActivity extends FragmentActivity {
      */
     private void setUpMap() {
         mMap.addMarker(new MarkerOptions()
-                .position(new LatLng(36.654212, -121.798234))
+                .position(new LatLng(latitude,longitude))
                 .title("OtterExpress"));
         mMap.setInfoWindowAdapter(new OEInfoWindowAdapter());
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(36.654212, -121.798234), 20));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude,longitude), 19));
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         mMap.setMyLocationEnabled(true);
     }
@@ -80,9 +101,8 @@ public class OtterExpressActivity extends FragmentActivity {
         @Override
         public View getInfoWindow(Marker marker) {
             View v  = getLayoutInflater().inflate(R.layout.oe_window_adapter, null);
-            String buildName = "Otter Express";
             TextView anotherLabel = (TextView)v.findViewById(R.id.marker_label);
-            anotherLabel.setText(buildName);
+            anotherLabel.setText(titleString);
             return v;
         }
 

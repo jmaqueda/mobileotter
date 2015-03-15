@@ -13,12 +13,12 @@
 
     <TextView
         android:id="@+id/hours"
-        android:text="My test hours\n9pm-Midnight"
+        android:text=""
         android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:maxLines="2"
+        android:maxLines="3"
      />
 
 </LinearLayout>
