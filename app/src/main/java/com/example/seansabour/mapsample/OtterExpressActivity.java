@@ -103,6 +103,8 @@ public class OtterExpressActivity extends FragmentActivity {
             View v  = getLayoutInflater().inflate(R.layout.oe_window_adapter, null);
             TextView anotherLabel = (TextView)v.findViewById(R.id.marker_label);
             anotherLabel.setText(titleString);
+            TextView descriptionLabel = (TextView) v.findViewById(R.id.hours);
+            descriptionLabel.setText(descriptionString);
             return v;
         }
 
