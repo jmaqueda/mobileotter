@@ -34,7 +34,7 @@
         android:layout_width="275dp"
         android:layout_height="60dp"
         android:text="@string/map_button"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textColor="#CFB53B"
         android:layout_margin="10dp"
         android:background = "@drawable/roundbutton"
@@ -46,7 +46,7 @@
         android:layout_height="60dp"
         android:text="@string/dining_button"
         android:background = "@drawable/roundbutton"
-        android:textSize="42sp"
+        android:textSize="35sp"
         android:textColor="#CFB53B"
         android:layout_margin="10dp"
         android:typeface="serif"/>
@@ -57,7 +57,7 @@
         android:layout_height="60dp"
         android:text="@string/parking_button"
         android:background = "@drawable/roundbutton"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textColor="#CFB53B"
         android:layout_margin="10dp"
         android:typeface="serif"/>
