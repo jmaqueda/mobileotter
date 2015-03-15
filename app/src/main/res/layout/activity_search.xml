@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center"
+    android:background="#002A4E">
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Enter Building"
+        android:layout_weight="0.08"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:shadowColor="#CFB53B"
+        android:shadowDx="-3"
+        android:shadowDy="-3"
+        android:shadowRadius="4"
+        android:typeface="serif"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_marginRight="15dp"
+        android:id="@+id/cinput_building"
+        android:layout_width="275dp"
+        android:layout_height="20dp"
+        android:hint="e.g. Otter Express, 14"
+        android:lines="1"
+        android:layout_weight="0.11"
+        android:background="@drawable/roundborderwhite"
+        android:layout_margin="10dp"
+        android:imeOptions="actionDone"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:text="Search"
+        android:layout_weight="0.05"
+        android:background="@drawable/roundbuttongold"/>
+
+
+</LinearLayout>

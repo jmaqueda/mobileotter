@@ -7,13 +7,13 @@ public class MyMarker {
     private String name;
     private Double mLatitude;
     private Double mLongitude;
-    private Integer id;
+    private String id;
 
-    public MyMarker(String name, Double mLatitude, Double mLongitude){//, Integer id) {
+    public MyMarker(String name, Double mLatitude, Double mLongitude, String id){//, Integer id) {
         this.name = name;
         this.mLatitude = mLatitude;
         this.mLongitude = mLongitude;
-        //this.id = id;
+        this.id = id;
     }
 
 
@@ -41,11 +41,11 @@ public class MyMarker {
         this.mLongitude = mLongitude;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 }

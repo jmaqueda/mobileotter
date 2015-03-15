@@ -20,10 +20,13 @@ import android.view.WindowManager;
 
         View map_button = findViewById(R.id.map_button);
         map_button.setOnClickListener(this);
+
         View dining_button = findViewById(R.id.dining_button);
         dining_button.setOnClickListener(this);
-        View parking_button = findViewById(R.id.parking_button);
-        parking_button.setOnClickListener(this);
+
+        View search_button = findViewById(R.id.search_button);
+        search_button.setOnClickListener(this);
+
         LocationMarkers lm = LocationMarkers.getInstance();
 
     }
@@ -34,12 +37,13 @@ import android.view.WindowManager;
             Intent i = new Intent(this, MapsActivity.class);
             startActivity(i);
 
-        }
-        else if(v.getId() == R.id.dining_button)
-        {
+        } else if (v.getId() == R.id.dining_button) {
             Intent i = new Intent(this, DiningActivity.class);
             startActivity(i);
 
+        } else if (v.getId() == R.id.search_button) {
+            Intent i = new Intent(this, SearchActivity.class);
+            startActivity(i);
         }
     }
 }

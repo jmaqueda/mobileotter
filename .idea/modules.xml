@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/mobileotter.iml" filepath="$PROJECT_DIR$/mobileotter.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/MapSample2.iml" filepath="$PROJECT_DIR$/MapSample2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
->>>>>>> origin/master
+      <module fileurl="file://$PROJECT_DIR$/mobileotter.iml" filepath="$PROJECT_DIR$/mobileotter.iml" />
     </modules>
   </component>
 </project>

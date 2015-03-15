@@ -39,7 +39,6 @@ public class MapsActivity extends FragmentActivity {
         longitude = gps.getLongitude();
 
         // Create Markers
-        //createMarkers();
         LocationMarkers lm = LocationMarkers.getInstance();
         mMyMarkersArray = lm.getMyMarkers();
 
