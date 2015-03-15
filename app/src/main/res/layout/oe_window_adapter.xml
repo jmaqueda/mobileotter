@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_800"
+    android:padding="5px">
+    <TextView
+        android:id="@+id/marker_label"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:text="My test hours\n9pm-Midnight"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:maxLines="2"
+     />
+
+</LinearLayout>

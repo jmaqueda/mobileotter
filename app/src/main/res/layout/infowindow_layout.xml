@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/marker_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000080"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:id="@+id/station_info_layout"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000080">
+
+        <TextView
+            android:id="@+id/marker_label"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/another_label"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#000080"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Directions!"
+        android:id="@+id/button_send"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#ffd700"
+        android:background="#5e5e5e"/>
+
+</LinearLayout>
+

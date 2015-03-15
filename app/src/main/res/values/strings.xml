@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MapsSample</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_dinings">Dinings</string>
+    <string name="title_activity_dining_commons">Dining Commons</string>
+    <string name="title_activity_menu">Mobile Otter</string>
+    <string name="title_activity_montes">Montes</string>
+    <string name="title_activity_otter_express">Otter Express</string>
+    <string name="title_activity_parking">Parking</string>
+
+
+    <string name="menu_about">Welcome to California State University Monterey Bay</string>
+    <string name="map_button">Campus Map</string>
+    <string name="dining_button">Dinings</string>
+    <string name="parking_button">Parking Lots</string>
+    <string name="dining_about">Here is what CSUMB dinings has to offer</string>
+    <string name="OE_button">Otter Express</string>
+    <string name="DC_button">Dining Commons</string>
+    <string name="Montes_button">Montes Restaurant</string>
+    <string name="title_activity_dining">DiningActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

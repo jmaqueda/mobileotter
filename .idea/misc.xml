@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ProjectDictionaryState">
     <dictionary name="maritzaabzun" />
   </component>
@@ -21,11 +22,19 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true">
     <output url="file://$PROJECT_DIR$/out" />
+=======
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+>>>>>>> origin/master
   </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>Android API 8 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
@@ -38,6 +47,9 @@
       </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
+=======
+          <last-edited>1.7</last-edited>
+>>>>>>> origin/master
           <splitter-proportions>
             <option name="proportions">
               <list>
